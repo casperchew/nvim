@@ -9,6 +9,10 @@ return {
 	local api = require("nvim-tree.api")
 	vim.keymap.set('n', '<C-n>', api.tree.toggle)
 
-    require("nvim-tree").setup {}
+    require("nvim-tree").setup {
+		update_focused_file = {
+			enable = true
+		}
+	}
   end,
 }
