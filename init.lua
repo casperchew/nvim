@@ -9,6 +9,7 @@ vim.diagnostic.config({
 	update_in_insert = false,
 })
 
+vim.o.foldenable = false
 vim.o.foldmethod = "indent"
 vim.o.list = true
 vim.o.relativenumber = true
